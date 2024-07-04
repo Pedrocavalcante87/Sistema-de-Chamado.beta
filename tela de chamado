@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Criação de Chamados</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		input, select {
+			margin-bottom: 10px;
+			padding: 5px;
+			width: 300px;
+			border: 1px solid gray;
+			border-radius: 3px;
+			font-size: 16px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 3px;
+			padding: 10px 20px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Criação de Chamados</h1>
+	<form>
+		<label for="nome-solicitante">Nome do Solicitante</label>
+		<input type="text" id="nome-solicitante" name="nome-solicitante" required>
+
+		<label for="departamento">Departamento</label>
+		<select id="departamento" name="departamento">
+			<option value="ti">TI</option>
+			<option value="financeiro">Financeiro</option>
+			<option value="compras">Compras</option>
+			<option value="rh">RH</option>
+		</select>
+
+		<label for="descricao-problema">Descrição do Problema</label>
+		<textarea id="descricao-problema" name="descricao-problema" rows="5" required></textarea>
+
+		<label for="nivel-urgencia">Nível de Urgência</label>
+		<select id="nivel-urgencia" name="nivel-urgencia">
+			<option value="baixo">Baixo</option>
+			<option value="medio">Médio</option>
+			<option value="alto">Alto</option>
+			<option value="critico">Crítico</option>
+		</select>
+
+		<input type="submit" value="Criar Chamado">
+	</form>
+</body>
+</html>
